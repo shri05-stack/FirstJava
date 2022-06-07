@@ -1,7 +1,7 @@
 
 public class studentarray {
 	public static void main(String[] args) {
-Student s1= new Student();
+        Student s1= new Student();
 		
 		Student s2= new Student();
 		
@@ -16,8 +16,7 @@ Student s1= new Student();
 		s2.Roll =13;
 		Student[] bikes= {s2,s1};
 		for(int i=0;i<bikes.length-1;i++) {
-			System.out.println(bikes[i].name);
-			System.out.println(bikes[i].gender);
+			System.out.println(bikes[i].name+bikes[i].gender);
 		}
 	}
 
