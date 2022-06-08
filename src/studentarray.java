@@ -1,9 +1,10 @@
+import com.globalpayex.college.entities.StudentOld;
 
 public class studentarray {
 	public static void main(String[] args) {
-        Student s1= new Student();
+        StudentOld s1= new StudentOld();
 		
-		Student s2= new Student();
+		StudentOld s2= new StudentOld();
 		
 		
 		s1.name ="Shrijan";
@@ -14,7 +15,7 @@ public class studentarray {
 		s2.gender ='f';
 		s2.marks =67;
 		s2.Roll =13;
-		Student[] bikes= {s2,s1};
+		StudentOld[] bikes= {s2,s1};
 		for(int i=0;i<bikes.length-1;i++) {
 			System.out.println(bikes[i].name+bikes[i].gender);
 		}

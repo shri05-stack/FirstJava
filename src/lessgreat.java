@@ -3,7 +3,7 @@ public class lessgreat {
 	static char lessgreat(float marks) {
 		char grade='I';
 		if (marks<0||marks>100) {
-			grade='I0';
+			grade='I';
 		}
 		else if(marks>=70){
 			grade ='A';
