@@ -1,5 +1,5 @@
 package com.abc.salary;
-
+@Deprecated
 public class SalaryCalculator {
 	public static double calculate(SalariedIndividual salariedIndividual) {
 		int noOfDays = salariedIndividual.getNoofDaysWorked();	

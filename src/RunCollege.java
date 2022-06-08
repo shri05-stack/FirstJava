@@ -19,7 +19,7 @@ public static void main(String[] args) {
 	System.out.println(p.gender);*/
 	System.out.println(s.getDetails());
 	
-	System.out.println(p.getDetails());
+//	System.out.println(p.getDetails());
 	System.out.println(p.calculate());
 }
 }
