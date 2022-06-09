@@ -20,6 +20,9 @@ public static void main(String[] args) {
 	System.out.println(s.getDetails());
 	
 //	System.out.println(p.getDetails());
+	
+//	System.out.println(SalaryCalculator.calculate(p));
+	
 	System.out.println(p.calculate());
 }
 }

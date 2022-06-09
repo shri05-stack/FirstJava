@@ -1,5 +1,4 @@
 package com.abc.salary;
-@Deprecated
 public interface SalariedIndividual {
 	int getNoofDaysWorked();
 	double getpriceperday();
