@@ -3,12 +3,12 @@ package com.globalpayex.college.entities;
 public class StudentOld {
 
 
-String name;
-char gender;
-int Roll;
-float marks;
+public String name;
+public char gender;
+public int Roll;
+public float marks;
 public static int count;
-StudentOld(){
+public StudentOld(){
 	this("NA", 'm', 25, 0.0f);
 }
 public StudentOld(String Name, char gender, int roll, float marks){

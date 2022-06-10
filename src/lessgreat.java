@@ -14,7 +14,7 @@ public class lessgreat {
 		return grade;
 	}
 	public static void main (String[]args) {
-		int marks =56;
+		int marks =90;
 		System.out.println(lessgreat(marks));
 	}
 

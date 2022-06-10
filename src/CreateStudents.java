@@ -3,6 +3,7 @@ import com.globalpayex.college.entities.StudentOld;
 public class CreateStudents {
 	public static void main(String[]args) {
 		System.out.println(StudentOld.count);
+		
 		StudentOld s1= new StudentOld("Ravi",'m',57,90f);
 		
 		StudentOld s2= new StudentOld("pratik",'m',57,90f);
@@ -23,8 +24,8 @@ public class CreateStudents {
 		s2.Roll =13;
 		System.out.println(s1.name);
 		System.out.println(s2.name);*/
-		System.out.println(StudentOld,count);
-		StudentOld s3= new StudentOld();
+		System.out.println(StudentOld.count);
+		StudentOld s3= new StudentOld("Ravi",'m',57,90f);
 		
 		System.out.println(s1.getDetails());
 		
