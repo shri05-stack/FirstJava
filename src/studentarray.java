@@ -7,10 +7,10 @@ public class studentarray {
 		StudentOld s2= new StudentOld();
 		
 		
-		s1.name ="Shrijan";
+		s1.name ="Pratik";
 		s1.gender='m';
-		s1.Roll=32;
-		s1.marks=10;
+		s1.Roll=82;
+		s1.marks=12;
 		s2.name ="jane";
 		s2.gender ='f';
 		s2.marks =67;
