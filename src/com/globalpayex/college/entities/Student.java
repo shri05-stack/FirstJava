@@ -1,11 +1,10 @@
 package com.globalpayex.college.entities;
-
 public class Student extends collegeuser {
 	
 	int Roll;
 	public float marks;
 	public int roll;
-	public Student(String name, char gender, int roll, float marks) {
+	public Student(String name, char gender, int roll, float marks, address add) {
 		super(name,gender);// calls the super class constructor
 		//Internally
 		//collegeuser(this)
@@ -13,7 +12,9 @@ public class Student extends collegeuser {
 		
 		this.Roll = roll;
 		this.marks = marks;
+		this.setAddress(add);
 	}
+	
 	@Override
 	public String getDetails() {
 		String str1=super.getDetails();

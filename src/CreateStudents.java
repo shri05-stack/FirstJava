@@ -4,7 +4,8 @@ public class CreateStudents {
 	public static void main(String[]args) {
 		System.out.println(StudentOld.count);
 		
-		StudentOld s1= new StudentOld("Ravi",'m',57,90f);
+		final StudentOld s1= new StudentOld("Ravi",'m',57,90f);
+		//s1 is final and cannot re assign a new value.
 		
 		StudentOld s2= new StudentOld("pratik",'m',57,90f);
 		/*System.out.println(s1);

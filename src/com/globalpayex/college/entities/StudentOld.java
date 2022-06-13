@@ -11,6 +11,7 @@ public static int count;
 public StudentOld(){
 	this("NA", 'm', 25, 0.0f);
 }
+
 public StudentOld(String Name, char gender, int roll, float marks){
 	this.name=Name;
 	this.gender=gender;
@@ -23,6 +24,7 @@ public String getDetails() {
 	//return "Name: " +this.name+"\nGender:"+this.gender+"\nRoll:"+this.Roll+"\nMarks:"+this.marks;//
 	return String.format("name:%s\ngender:%s\nroll:%s\nmarks:%s", this.name,this.gender,this.Roll,this.marks);
 }
+public 
 public char getGrade() {
 	char grade;
 	
