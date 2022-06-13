@@ -9,6 +9,7 @@ public static void main(String[] args) {
 	Student s = new Student("mehul", 'm', 10,90);
 	s.setAddress(new  address("IND", 825301, "JH"));
 	System.out.println(s.getDetails1());
+	System.out.println(s.isAddressPresent());
 	String[] subjects= {"physics","chemistry"};
 	professor p = new professor("jane",'f',subjects,5000,24);
 	/*System.out.println(i);
