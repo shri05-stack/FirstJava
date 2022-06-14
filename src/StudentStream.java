@@ -20,8 +20,8 @@ public class StudentStream {
 				 List <Student> students=Arrays.asList(
 				            new Student("hridyes",'m',3,44, new address("MH", 1, "USA")),
 				            new Student("rides",'m',2,4,new  address("UK", 3, "IN")),
-				            new Student("hdyes",'m',1,94,new address("TN", 5, "BL")),
-				            new Student("Jkh",'m',2,45)
+				            new Student("hdyes",'m',1,94,new address("TN", 5, "BL"))
+//				            new Student("Jkh",'m',2,45)
 				            );
 		//print the names of all students comma seperated as a string who belong to the USA country
 		String add = students.stream().filter(ele ->ele.getAddress()!=null && ele.getAddress().getCountry().equals("USA"))

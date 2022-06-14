@@ -1,8 +1,8 @@
 package com.globalpayex.bank.entities;
 
 import java.util.Optional;
-
 import com.globalpayex.bank.exception.MinBalNotMaintainedException;
+import static com.globalpayex.bank.entities.*;
 
 public class Account {
 	//forced encapsulation
@@ -13,20 +13,21 @@ public class Account {
 	
 	
 	int accounts;
-	private String accounttype;
+	//private String accounttype;
+	private AccType accType;
 	private double balance;
 	public String accNumber;
 	
 	public Account(int accountno, String accounttype, double balance) {
 		this.accounts=accounts;
-		this.accounttype= accounttype;
+		this.accType= accounttype;
 		this.balance= balance;
 		
 	}
 	//setter method
 	public void setAccType(String accType) {
 		if(accType.equals("Savings") || accType.equals("Current")) {
-			this.accounttype=accType;
+			this.accType=accType;
 		}
 		else {
 			throw new IllegalArgumentException("accType must be one of the following: Savings/Current");
@@ -45,7 +46,7 @@ public class Account {
 	}
 	//getter method
 	public String getAcctype() {
-		return this.accounttype.toUpperCase();	
+		return this.accType.toUpperCase();	
 		}
 	public double withdraw(double amt) throws MinBalNotMaintainedException {
 		System.out.println("transaction starts...");
@@ -66,25 +67,28 @@ public class Account {
 	}
 	
 	public Optional<String> getDetails(){
-		if(this.accNumber!=null && !this.accNumber.equals("")&& !(this.accounttype !=null) && !this.accounttype())
+		if(this.accNumber!=null && !this.accNumber.equals("")&& !(this.accType !=null) && !this.accounttype())
 		{
-				return Optional.of(String.format("Acc NO %s Acc Type %s Bal %d ", this.accNumber,this.accounttype,this.balance));
+				return Optional.of(String.format("Acc NO %s Acc Type %s Bal %d ", this.accNumber,this.acctype.ordinal(),this.balance));
 		}
 	}
 		
-//	public Optional<String> getDetails(){
-//		if(this.accNumber!=null && !this.accNumber.equals("")&& !(this.accounttype !=null) && !this.accounttype())
-//		{
-//			return Optional.of(String.format("Acc NO %s Acc Type %s Bal %d ", this.accNumber,this.accounttype,this.balance));
-//		}
-//		return Optional.empty();
-//	}
+	public Optional<String> getDetails(){
+		if(this.accNumber!=null && !this.accNumber.equals("")&& !(this.accType !=null) && !this.accounttype())
+		{
+			return Optional.of(String.format("Acc NO %s Acc Type %s Bal %d ", this.accNumber,this.accType.ordinal(),this.balance));
+		}
+		return Optional.empty();
+	}
 	
 	
 }
-	private boolean accounttype() {
+	/*private boolean accounttype() {
 		// TODO Auto-generated method stub
 		return false;
+	}*/
+	public boolean hasInterest() {
+		return this.accType==AccType.SAVINGS;
 	}
 	
 }

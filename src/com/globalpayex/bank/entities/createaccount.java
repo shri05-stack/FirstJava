@@ -6,7 +6,7 @@ public class createaccount {
 
 
 	public static void main(String[] args) {
-		Account a= new Account(123,"savings", 10000);
+		Account a= new Account(ACCtype,"savings", 10000);
 		a.getDetails().ifPresent
 		Account emptyAccount = new Account(null,null,0);
 		/*System.out.println(a.deposit(1000));

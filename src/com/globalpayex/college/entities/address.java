@@ -2,38 +2,38 @@ package com.globalpayex.college.entities;
 
 public class address {
 	
-		public String country;
-		public int postalcode;
-	    public String State;
-		public address(String country, int postalcode, String state) {
-			super();
+		private String country;
+		private int postalcode;
+	    private String State;
+		public void setaddress(String country, int postalcode, String state) {
+			
 			this.country = country;
 			this.postalcode = postalcode;
 			this.State = state;
 		}
-		public String getCountry() {
+		public address(String country,int postalcode, String State)
+		{ 
+			this.country = country;
+			this.postalcode = postalcode;
+			this.State = State;
+		}
+		
+		public address()
+		{
+			
+		}
+		
+		public String getCountry()
+		{
 			return this.country;
 		}
-		public void setCountry(String country) {
-			this.country = country;
+		
+		public String getAddress()
+		{
+			return String.format("State: %s \nCountry: %s \nPostal Code: %s",
+								this.State,this.country,this.postalcode);
 		}
-		public int getPostalcode() {
-			return this.postalcode;
-		}
-		public void setPostalcode(int postalcode) {
-			this.postalcode = postalcode;
-		}
-		public String getState() {
-			return this.State;
-		}
-		public void setState(String state) {
-			State = state;
-		}
-	    
-		public int getDetails() {
-			return this.postalcode;
-		}
-	    
+
 	    
 }
 

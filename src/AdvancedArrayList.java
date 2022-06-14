@@ -1,11 +1,12 @@
 import java.util.Arrays;
+import java.util.HashSet;
 import java.util.ArrayList;
 import java.util.List;
 
 public class AdvancedArrayList {
 	public static void main(String[] args) {
 		List<Integer> nos = Arrays.asList(4,1,6,7,9,10,3,5,1,7,9);
-		System.out.println(nos);
+		/*System.out.println(nos);
 		System.out.println(nos.getClass());
 		
 		
@@ -20,7 +21,12 @@ public class AdvancedArrayList {
 		
 		//method references
 		System.out.println("****** all numbers(method references)*****");
-		nos.forEach(System.out::println);
+		nos.forEach(System.out::println);*/
+		java.util.HashSet<String> hs = new HashSet<>();
+		hs.add("F1");
+		hs.add("F2");
+		
+		hs.forEach(ele->{System.out.println(ele);});
 	}
 
 }
