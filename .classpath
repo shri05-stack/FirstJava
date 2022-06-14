@@ -7,5 +7,9 @@
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/5"/>
+	<classpathentry kind="lib" path="Lib/mockito-core-4.6.1.jar"/>
+	<classpathentry kind="lib" path="Lib/mockito-junit-jupiter-4.6.1.jar"/>
+	<classpathentry kind="lib" path="Lib/byte-buddy-1.12.10.jar"/>
+	<classpathentry kind="lib" path="Lib/objenesis-3.2.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
